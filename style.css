@@ -6,22 +6,44 @@
 
 body {
   background-color: aqua;
+  height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .etch-a-sketch {
   box-sizing: border-box;
   border: 2px black solid;
-  width: 1000px;
-  height: 600px;
+  width: 1500px;
+  height: 900px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.etch-a-sketch-buttons {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.etch-a-sketch-buttons-grid-size,
+.etch-a-sketch-buttons-random {
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+  padding: 4px;
+  background-color: lightgreen;
+  border-radius: 2px;
 }
 
 .theDiv {
   width: 100%;
   background-color: pink;
-  border: 2px black solid;
+  border: 0.05px black solid;
 }
